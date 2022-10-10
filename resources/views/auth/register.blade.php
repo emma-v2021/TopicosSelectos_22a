@@ -9,7 +9,7 @@
 
         <div class="card card-login card-hidden mb-3">
           <div class="card-header card-header-primary text-center">
-            <h4 class="card-title"><strong>{{ __('Register') }}</strong></h4>
+            <h4 class="card-title"><strong>{{ __('Registro') }}</strong></h4>
             <div class="social-line">
               <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
                 <i class="fa fa-facebook-square"></i>
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="card-body ">
-            <p class="card-description text-center">{{ __('Or Be Classical') }}</p>
+            <p class="card-description text-center">{{ __('Llena los campos') }}</p>
             <div class="bmd-form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
               <div class="input-group">
                 <div class="input-group-prepend">
