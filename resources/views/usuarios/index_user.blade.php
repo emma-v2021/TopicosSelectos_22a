@@ -1,5 +1,5 @@
 @extends('layouts.main',['activePage' => 'users', 'titlePage' => 'Listado de Usuarios' ])
- 
+
 @section('content')
 <div class="content">
       <div class="container-fluid">
@@ -20,9 +20,9 @@
                     @endif
                     <div class="row">
                       <div class="col-12 text-right">
-                       
+
                         <a href="{{route('usuarios.create')}}" class="btn btn-sm btn-primary">Añadir usuario</a>
-                       
+
                       </div>
                     </div>
                     <div class="table-responsive">
@@ -33,39 +33,41 @@
                           <th>Correo</th>
                           <th>Fecha de creación</th>
                           <th class="text-right">Acciones</th>
-                         
+
                         </thead>
                         <tbody>
-                     
+
                         <tr>
                         <td> </td>
                         <td> </td>
                         <td></td>
                         <td></td>
                         <td class="td-actions text-right">
-                         
-                         
+
+                        <a href="#" class = "btn btn-info"><i class="material-icons">visibility</i></a>
+                        <a href="#" class = "btn btn-warning"><i class="material-icons">drive_file_rename_outline</i></a>
+
                           <form action ="#" method="POST" style="display:inline-block;">
                           @csrf
                           @method('DELETE')
                           <button class="btn btn-danger" type="submit" rel="toltip">
-                          <i class="material-icons">close</i>    
+                          <i class="material-icons">delete_forever</i>
                           </button>
                           </form>
- 
+
                         </td>
- 
+
                         </tr>
-         
+
                         </tbody>
- 
- 
-                       
+
+
+
                       </table>
                     </div>
                   </div>
                   <div class="card-footer mr-auto">
-   
+
                   </div>
                 </div>
               </div>
