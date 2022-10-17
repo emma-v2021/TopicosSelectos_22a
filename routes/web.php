@@ -25,3 +25,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index'])-> name('usuarios.index');
 Route::get('/usuarios/create', [App\Http\Controllers\UserController::class, 'create'])-> name('usuarios.create');
 Route::post('/usuarios/create', [App\Http\Controllers\UserController::class, 'store'])-> name('usuarios.store');
+Route::get('/usuarios/{user}', [App\Http\Controllers\UserController::class, 'show'])-> name('usuarios.show_user');
