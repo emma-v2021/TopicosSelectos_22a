@@ -46,7 +46,7 @@
                         <td class="td-actions text-right">
 
                         <a href="{{ route('usuarios.show_user',$user->id)}}" class = "btn btn-info"><i class="material-icons">visibility</i></a>
-                        <a href="#" class = "btn btn-warning"><i class="material-icons">drive_file_rename_outline</i></a>
+                        <a href="{{ route ('usuarios.edit',$user->id) }}" class = "btn btn-warning"><i class="material-icons">drive_file_rename_outline</i></a>
 
                           <form action ="{{ route('usuarios.delete',$user->id) }}" method="POST" style="display:inline-block;">
                           @csrf

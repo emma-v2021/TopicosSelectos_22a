@@ -27,3 +27,5 @@ Route::get('/usuarios/create', [App\Http\Controllers\UserController::class, 'cre
 Route::post('/usuarios/create', [App\Http\Controllers\UserController::class, 'store'])-> name('usuarios.store');
 Route::get('/usuarios/{user}', [App\Http\Controllers\UserController::class, 'show'])-> name('usuarios.show_user');
 Route::delete('/usuarios/{user}', [App\Http\Controllers\UserController::class, 'destroy'])-> name('usuarios.delete');
+Route::get('/usuario/{user}/edit', [App\Http\Controllers\UserController::class, 'edit'])->name('usuarios.edit');
+Route::put('/usuario/{user}', [App\Http\Controllers\UserController::class, 'update'])->name('usuarios.update');
